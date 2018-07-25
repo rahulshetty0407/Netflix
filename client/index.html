@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+
+	<title>Netfilx</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="js/netflix.js"></script>
+</head>
+<body style:{background-color:black;color:white}>
+
+
+
+
+
+<header>
+
+<div class="headtop">
+<div class="navbar navbar-default navbar-fixed-top">
+  
+
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-left">
+	   <li><a class="text" href="#">Netfilx</a></li>
+        <li><a class="text" href="#">Home</a></li>
+        <li><a class="text" href="#">TvShows</a></li>
+        <li><a class="text" href="#">Movies</a></li>
+        <li><a class="text" href="#">Recently Added</a></li>
+        <li><a class="text" href="#">MyList</a></li>
+      </ul>
+
+ <ul class="nav navbar-nav navbar-right">
+     
+        <li><a class="text" href="#"><input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button></a></li>
+        <li><a class="text" href="#">Notification</a></li>
+        <li><a class="text" href="#">SignIn/LogIN&nbsp&nbsp&nbsp</a></li>
+      </ul>
+    </div>
+  </div>
+  
+   
+  </div>
+</div>
+</div>
+
+</header>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="movielist" id="movieL" style={background-color:black;color:white} >
+<div class="row">
+  <div class="col-md-4 img-responsive">
+    <img src="http://ia.media-imdb.com/images/M/MV5BMTU4MDU3NDQ5Ml5BMl5BanBnXkFtZTgwOTU5MDUxNTE@._V1_SX300.jpg" alt="Snow">
+	
+  </div>
+  <div class="col-md-4 img-responsive">
+    <img src="http://ia.media-imdb.com/images/M/MV5BMTk2NTI1MTU4N15BMl5BanBnXkFtZTcwODg0OTY0Nw@@._V1_SX300.jpg" alt="Forest" >
+  </div>
+  <div class="col-md-4 img-responsive">
+    <img src="http://ia.media-imdb.com/images/M/MV5BODU4MjU4NjIwNl5BMl5BanBnXkFtZTgwMDU2MjEyMDE@._V1_SX300.jpg" alt="Mountains" >
+  </div>
+</div>
+</div>
+<div class="img-responsive" id="movie">
+    <img src="http://ia.media-imdb.com/images/M/MV5BODU4MjU4NjIwNl5BMl5BanBnXkFtZTgwMDU2MjEyMDE@._V1_SX300.jpg" alt="Mountains" >
+  </div>
+<ul id="myList">
+  <li>Coffee</li>
+  <li>Tea</li>
+</ul>
+
+<p>Click the button to insert an item to the list.</p>
+  
+  <button onclick="myFunction()">Try it</button>
+
+<p><strong>Example explained:</strong><br>First create a LI node,<br> then create a Text node,<br> then append the Text node to the LI node.<br>Finally insert the LI node before the first child node in the list.</p>
+
+<script>
+function myFunction() {
+    var newItem = document.createElement("LI");
+    var textnode = document.createTextNode("Water");
+    newItem.appendChild(textnode);
+
+    var list = document.getElementById("myList");
+    list.insertBefore(newItem, list.childNodes[0]);
+}
+</script>
+  
+  
+<footer>
+
+<div class="footer">
+  <div class="">
+    <div class="container-fluid text-center">
+
+
+      <!--<div class="collapse navbar-collapse">-->
+        <ul class="nav navbar-nav">
+          <li><a  href="https://www.facebook.com/rahul.shetty.338" class="fa fa-facebook" target="_blank"></a></li>
+          <li ><a  href="https://www.linkedin.com/in/rahul-shetty-/" class="fa fa-linkedin" target="_blank"></a></li>
+          <li ><a  href="https://github.com/rahulshetty0407" class="fa fa-github" target="_blank"></a></li>
+
+        </ul>
+
+
+      </div>
+    <!--</div>-->
+  </div>
+</div>	
+</footer>
+</body>
+</html>
